@@ -1,67 +1,68 @@
-import { createContext, useEffect, useState } from 'react'
-import { StyleSheetConsumer } from 'styled-components'
+import { createContext, useEffect, useState } from "react";
 
-export const AuthContext = createContext({})
+export const AuthContext = createContext({});
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState()
+  const [user, setUser] = useState();
 
   useEffect(() => {
-    const userToken = localStorage.getItem('user_token')
-    const usersStorage = localStorage.getItem('users_db')
+    const userToken = localStorage.getItem("user_token");
+    const usersStorage = localStorage.getItem("users_bd");
 
     if (userToken && usersStorage) {
-      const hasUser = JSON.parse(usersStorage).filter(
-        user => user.email === JSON.parse(userToken).email
-      )
+      const hasUser = JSON.parse(usersStorage)?.filter(
+        (user) => user.email === JSON.parse(userToken).email
+      );
 
-      if (hasUser) setUser(hasUser[0])
+      if (hasUser) setUser(hasUser[0]);
     }
-  }, [])
+  }, []);
 
   const signin = (email, password) => {
-    const usersStorage = JSON.parse(localStorage.getItem('users_db'))
+    const usersStorage = JSON.parse(localStorage.getItem("users_bd"));
 
-    const hasUser = usersStorage?.filter(user => user.email === email)
+    const hasUser = usersStorage?.filter((user) => user.email === email);
 
-    if (hasUser?.lenght) {
+    if (hasUser?.length) {
       if (hasUser[0].email === email && hasUser[0].password === password) {
-        const token = Math.random().toString(36).substring(2)
-        localStorage.setItem('user_token', JSON.stringify({ email, token }))
-        setUser({ email, password })
-        return
+        const token = Math.random().toString(36).substring(2);
+        localStorage.setItem("user_token", JSON.stringify({ email, token }));
+        setUser({ email, password });
+        return;
       } else {
-        return 'Email ou senha incorretos'
+        return "E-mail ou senha incorretos";
       }
     } else {
-      return 'Usuário não cadastrado'
+      return "Usuário não cadastrado";
     }
-  }
+  };
 
   const signup = (email, password) => {
-    const usersStorage = JSON.parse(localStorage.getItem('users_db'))
-    const hasUser = usersStorage?.filter(user => user.email === email)
+    const usersStorage = JSON.parse(localStorage.getItem("users_bd"));
 
-    if (hasUser?.lenght) {
-      return 'Já tem uma conta com esse E-mail'
+    const hasUser = usersStorage?.filter((user) => user.email === email);
+
+    if (hasUser?.length) {
+      return "Já tem uma conta com esse E-mail";
     }
 
-    let newUser
+    let newUser;
 
     if (usersStorage) {
-      newUser = [...usersStorage, { email, password }]
+      newUser = [...usersStorage, { email, password }];
     } else {
-      newUser = [{ email, password }]
+      newUser = [{ email, password }];
     }
-    localStorage.setItem('users_db', JSON.stringify(newUser))
 
-    return
-  }
+    localStorage.setItem("users_bd", JSON.stringify(newUser));
+
+    return;
+  };
 
   const signout = () => {
-    setUser(null)
-    localStorage.removeItem('user_token')
-  }
+    setUser(null);
+    localStorage.removeItem("user_token");
+  };
 
   return (
     <AuthContext.Provider
@@ -69,7 +70,5 @@ export const AuthProvider = ({ children }) => {
     >
       {children}
     </AuthContext.Provider>
-  )
-
-  return <AuthContext.Provider>{children}</AuthContext.Provider>
-}
+  );
+};

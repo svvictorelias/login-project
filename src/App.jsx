@@ -1,15 +1,13 @@
-import './App.css'
-import { AuthProvider } from './contexts/auth'
-import RoutesApp from './routes'
+import React from "react";
+import RoutesApp from "./routes";
+import { AuthProvider } from "./contexts/auth";
+import GlobalStyle from "./styles/global";
 
+const App = () => (
+  <AuthProvider>
+    <RoutesApp />
+    <GlobalStyle />
+  </AuthProvider>
+);
 
-function App() {
-
-  return (
-    <AuthProvider>
-      <RoutesApp />
-    </AuthProvider>
-  )
-}
-
-export default App
+export default App;

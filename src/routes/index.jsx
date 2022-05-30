@@ -1,14 +1,15 @@
-import { Fragment } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Signup from '../pages/Signup'
-import Signin from '../pages/Signin'
-import Home from '../pages/Home'
+import { Fragment } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
+import Home from "../pages/Home";
+import Signin from "../pages/Signin";
+import Signup from "../pages/Signup";
 
 const Private = ({ Item }) => {
-  const signed = false
+  const { signed } = useAuth();
 
-  return signed > 0 ? <Item /> : <Signin />
-}
+  return signed > 0 ? <Item /> : <Signin />;
+};
 
 const RoutesApp = () => {
   return (
@@ -22,7 +23,7 @@ const RoutesApp = () => {
         </Routes>
       </Fragment>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default RoutesApp
+export default RoutesApp;
