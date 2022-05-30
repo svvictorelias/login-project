@@ -1,0 +1,60 @@
+{
+  "aulas":[
+    {
+      "id": 1,
+      "titulo": "Do Zero ao primeiro Emprego FrontEnd",
+      "capa": "https://i.ytimg.com/vi/uhAPKjuWLeY/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLARaXtGhPmerruGsPFg2cGSpNksVA",
+      "url":"https://www.youtube.com/watch?v=wgYQjn8rF3E",
+      "techs": "softskill,carreira"
+    },
+    {
+      "id": 2,
+      "titulo": "O que um Dev Junior precisa saber",
+      "capa": "https://i.ytimg.com/vi/oJlY11LpNvY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDUz79CPCSDMxvHswI7JbyhGZ8KlA",
+      "url":"https://www.youtube.com/watch?v=oJlY11LpNvY",
+      "techs": "html,Javascript"
+    },
+    {
+      "id": 3,
+      "titulo": "Crie uma Calculadora com HTML CSS e JS",
+      "capa": "https://i.ytimg.com/vi/KCfaPZ2t2yA/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJVaPd3BHG8jNocpZ4KmgroBEU_Q",
+      "url":"https://www.youtube.com/watch?v=KCfaPZ2t2yA",
+      "techs": "html,css,Javascript"
+    },
+    {
+      "id": 4,
+      "titulo": "20 extensões obrigatórias no meu VS Code",
+      "capa": "https://i.ytimg.com/vi/GzJEKZmLk4Q/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAuPD5Ps3H8UmUz5V-mS0Tn42fYSg",
+      "url":"https://www.youtube.com/watch?v=GzJEKZmLk4Q",
+      "techs": "tech,vscode,dicas"
+    },
+    {
+      "id": 5,
+      "titulo": "Animação de carregamento com HTML e CSS",
+      "capa": "https://i.ytimg.com/vi/_-tlUGRxkgc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCgX7L8SoujFE3EAvcXiK57yBZqYQ",
+      "url":"https://www.youtube.com/watch?v=_-tlUGRxkgc",
+      "techs": "html,css"
+    },
+    {
+      "id": 6,
+      "titulo": "CRUD com Node.JS, Express, TypeORM e PostgreSQL",
+      "capa": "https://i.ytimg.com/vi/9AO2hZJsHrs/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCv7YrN5VvRSR1s0HY758XAsu0-dA",
+      "url":"https://www.youtube.com/watch?v=9AO2hZJsHrs",
+      "techs": "NodeJs,Express,PostgreSQL,TypeORM"
+    },
+    {
+      "id": 7,
+      "titulo": "Como fazer commits atômicos pelo VSCode",
+      "capa": "https://i.ytimg.com/vi/NpTF7HsuG5U/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA6xdeDtcgz1Bb06qefVx_dnxJ5Kw",
+      "url":"https://www.youtube.com/watch?v=NpTF7HsuG5U",
+      "techs": "git,github"
+    },
+    {
+      "id": 8,
+      "titulo": "Criando um sistema de Login com React",
+      "capa": "https://i.ytimg.com/vi/kPtTguJlRFY/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAskTrQzQpph62XYf53DxvuNEhEHA",
+      "url":"https://www.youtube.com/watch?v=kPtTguJlRFY&t=1s",
+      "techs": "ReactJs,Context API, Rest"
+    }
+  ]
+}

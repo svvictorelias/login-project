@@ -1,0 +1,45 @@
+a {
+  color: white;
+}
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.692);
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30rem;
+  margin-left: 1rem;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.459);
+}
+.wrapper img {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom: 4px solid gray;
+  width: 100%;
+}
+.titleCard {
+  margin: 0.5rem 0rem;
+}
+.techs {
+  width: 100%;
+  padding-left: 2rem;
+}
+
+.techs ul {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  gap: 1rem;
+  padding: 0;
+}
+.techs ul li {
+  font-size: 1.6rem;
+  list-style: none;
+  background-color: gray;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
