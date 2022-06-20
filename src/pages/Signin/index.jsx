@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Input from "../../components/Input/index.jsx";
+import Input from "../../components/input/index";
 import Button from "../../components/Button/index";
 import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
