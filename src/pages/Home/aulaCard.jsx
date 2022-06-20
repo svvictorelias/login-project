@@ -1,6 +1,6 @@
 
 import React from 'react'
-import './AulaCard.css'
+import './aulaCard.css'
 
 const AulaCard = ({ titulo, capa, techs, urlVideo }) => {
   const techsArray = techs.split(',')
