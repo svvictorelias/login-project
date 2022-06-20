@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Input from "../../components/Input/index.jsx";
-import Button from "../../components/Button";
+import Input from "../../components/Input/index";
+import Button from "../../components/Button/index";
 import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
